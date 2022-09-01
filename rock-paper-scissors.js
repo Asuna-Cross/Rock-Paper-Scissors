@@ -9,9 +9,10 @@ function getComputerChoice(computerChoice){
     let pick = Math.floor(Math.random() * computerOptions.length);
     /*Use number to pick outcome and add to global variable*/
     return computerOptions[pick];
-    /*temp - Show outcome to show proof of working*/
+
 }
 
+/*temp - Show outcome to show proof of working*/
 console.log(comChoice);
 
 
