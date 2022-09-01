@@ -12,10 +12,6 @@ function getComputerChoice(computerChoice){
 
 }
 
-/*temp - Show outcome to show proof of working*/
-console.log(comChoice);
-
-
 /*******Player Choice******/
 
 /*Declare player selection as global variable */
@@ -29,8 +25,6 @@ function getPlayerChoice(checkChoice){
     return playerChoiceUnchanged.toLowerCase();
 }
 
-/*temp - Show outcome to show proof of working*/
-console.log(playChoice);
 
 /*******Compared to decide who wins ********/
 
@@ -47,20 +41,32 @@ if (playChoice =="rock"){
         winCon = "lose"
     }
 }
-    /*If statement Check for a draw*/
-    /*Else - Win Statement*/
-    /*Else - Loose statement*/
-/*Else - Scissors*/
-    /*If statement - check for draw*/
-    /*Else - Win Statement*/
-    /*Else - Loose statement*/
-/*Else - Paper*/
-    /*If statement - check for draw*/
-    /*Else - Win Statement*/
-    /*Else - Loose statement*/
-/*Else prompt player for different entry*/
+else if (playChoice == "scissors"){
+    if(comChoice == "scissors"){
+        winCon = "draw"
+    }
+    else if (comChoice == "paper"){
+        winCon = "win"
+    }
+    else{
+        winCon = "lose"
+    }
+}
+else if (playChoice == "paper"){
+    if(comChoice == "paper"){
+        winCon = "draw"
+    }
+    else if (comChoice == "rock"){
+        winCon = "win"
+    }
+    else{
+        winCon = "lose"
+    }
+}
+else{
+    console.log("Please reload and enter a valid answer")
+}
 
+console.log(comChoice);
+console.log(playChoice);
 console.log(winCon);
-/*Give output */
-
-/*Take computer and user choice and outcome of who wins and display */
