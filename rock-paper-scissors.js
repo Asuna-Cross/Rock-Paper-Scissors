@@ -1,4 +1,4 @@
-/*Create function get Computer Choice */
+/******Computer Choice *******/
 
 let comChoice = getComputerChoice();
 
@@ -16,16 +16,21 @@ function getComputerChoice(computerChoice){
 console.log(comChoice);
 
 
-/*Get player selection*/
+/*******Player Choice******/
 
 /*Declare player selection as global variable */
-
+let playChoice = getPlayerChoice();
 /*Declare function*/
-    /*Prompt user for input*/
-    /*Convert input to lowercase*/
-    /*temp - Show outcome to show proof of working*/
-/*End cuntion declaration*/
 
+function getPlayerChoice(checkChoice){
+    /*Prompt user for input*/
+    const playerChoiceUnchanged = prompt("Pick, rock, paper or scissors");
+    /*Convert input to lowercase*/
+    return playerChoiceUnchanged.toLowerCase();
+}
+
+    /*temp - Show outcome to show proof of working*/
+console.log(playChoice);
 
 /*Compared to decide who wins */
 
