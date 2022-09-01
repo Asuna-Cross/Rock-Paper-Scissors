@@ -1,13 +1,19 @@
 /*Create function get Computer Choice */
 
-/*Declare computer choice as global variable */
+let comChoice = getComputerChoice();
 
-/*Declare Function */
+function getComputerChoice(computerChoice){
     /*Declare list of what the computer can choose from */
+    const computerOptions = ["rock", "paper", "scissors"];
     /*Maths module to pick a random number from list size*/
+    let pick = Math.floor(Math.random() * computerOptions.length);
     /*Use number to pick outcome and add to global variable*/
+    return computerOptions[pick];
     /*temp - Show outcome to show proof of working*/
-/*End function declaration */
+}
+
+console.log(comChoice);
+
 
 /*Get player selection*/
 
